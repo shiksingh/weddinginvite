@@ -1,14 +1,10 @@
 body{
 	font-family: Arial;
 	overflow-x: hidden; 
+	padding: 0;
+	margin: 0;
 }
-.header{
-	width: 100%;
-	height: 100px;
-	background: #e6f2ef;
-	border-bottom: 3px inset #e6f2ef;
-	color: #6e9990;
-}
+
 .flex{
 	display: flex;
 }
@@ -22,14 +18,177 @@ body{
 .hcenter{
 	justify-content: center;
 }
+.cursive{
+	font-family: 'Snell Roundhand','Brush Script MT',cursive;
+}
+
+@media screen and (max-width: 2000px) {
+	.header{
+		width: 100%;
+		height: 100px;
+		background: #e6f2ef;
+		border-bottom: 3px inset #e6f2ef;
+		color: #6e9990;
+	    position: sticky;
+	    top: 0;
+	    left: 0;
+	}
+	.p20{
+		padding: 20px;
+	}
+	.desktop-hide{
+		display: none;
+	}
+	.right-frame{
+	    display: flex;
+	    flex-direction: column;
+	    align-items: flex-start;
+	    justify-content: center;
+	    position: absolute;
+	    top: 0px;
+	    right: -90px;
+	}
+	.left-frame{
+		-webkit-transform: scaleX(-1);
+	  	transform: scaleX(-1);
+	    display: flex;
+	    flex-direction: column;
+	    align-items: flex-start;
+	    justify-content: center;
+	    position: absolute;
+	    top: 0;
+	    left: -90px;
+	}
+	.ganesha{
+		width: 100%;
+		height: 250px;
+	}
+	.ganesha img{
+		width: 150px;
+	}
+}
+
+@media screen and (max-width: 420px){
+	.mobile-hide{
+		display: none !important;
+	}
+	.mobile-col{
+		flex-direction: column;
+	}
+	.header{
+		background: #e6f2ef;
+		border-bottom: 3px inset #e6f2ef;
+		color: #6e9990;
+	    position: static;
+	}
+	.p20{
+		padding: 5px;
+	}
+	.desktop-hide{
+		display: block;
+	}
+	.banner{
+		background: #6e9990;
+		padding: 10px;
+	}
+	.ganesha{
+		width: 100%;
+		height: 150px;
+	}
+	.ganesha img{
+		width: 100px;
+	}
+	.frame-content img.bobble-head{
+	    border-radius: 50%;
+		border: 1px solid transparent;
+		background: white;
+	}
+	.love-story .head{
+		cursor: pointer;
+		background: white;
+	    color: #6e9990;
+	    padding: 10px;
+	    font-size: 24px !important;
+	    border-radius: 9px;
+	    border: 1px solid #e6f2ef;
+	}
+	.overlay-wrapper{
+		position: fixed;
+	    top: 0;
+	    left: 0;
+	    background: rgba(0,0,0,0.5);
+	    height: 100%;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.overlay{
+		background: #6e9990;
+	    padding: 30px;
+	    border-radius: 15px;
+	    position: relative;
+	}
+	.cross{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		font:icon;
+	}
+	.margin10{
+		align-items: baseline !important;
+	}
+	.evening-get-together .body .sub{
+		padding: 8px !important;
+	}
+	.evening-get-together .body .sub{
+		font-size: 11px;
+	}
+	.evening-get-together .body .sub .content{
+		font-size: 11px !important;
+	}
+	.frames{
+		padding: 8px !important;
+	}
+	.frame-content{
+		padding: 8px !important;
+		max-width: 90% !important;
+	}
+	.invite{
+		display: flex !important;
+		flex-direction: column;
+	}
+	.invite .main{
+	    width: 60%;
+    	text-align: center;
+    	margin: 10px 0px 20px 0px;
+	}
+	.invite .subMain{
+		display: flex;
+	    flex-direction: column;
+	    align-items: baseline;
+	    justify-content: flex-start;
+	    margin-top: 10px;
+	    font-size: 14px;
+	    width: 100%;
+	    text-align: center;
+	}
+	.width100{
+		width: 100%;
+	}
+	.love-story, .wedding-ceremony, .evening-get-together{
+		margin: 10px 0px;!important;
+	}
+	.conclusion img{
+		max-width: 100% !important;
+	}
+}
+
 .flex-item {
   flex-grow: 1;
 }
 .even-spaced{
 	justify-content: space-evenly;
-}
-.p20{
-	padding: 20px;
 }
 .mlr3{
 	margin: 0 3px 0px 3px;
@@ -58,13 +217,6 @@ body{
     background-size: contain;
     width: 100%;
 }
-.ganesha{
-	width: 100%;
-	height: 250px;
-}
-.ganesha img{
-	width: 150px;
-}
 
 .frame-content{
     align-items: center;
@@ -80,28 +232,6 @@ body{
 	padding: 30px;
 }
 
-.right-frame{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-}
-
-.left-frame{
-	-webkit-transform: scaleX(-1);
-  	transform: scaleX(-1);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0px;
-}
-
 .left-frame img{
 	height: 170px;
 }
@@ -111,7 +241,7 @@ body{
 
 .frame-content{
 	background-color: #6e9990;
-	max-width: 600px;
+	max-width: 75%;
 	padding: 20px;
 	border-radius: 15px; 
 }
@@ -127,14 +257,13 @@ body{
 }
 
 .love-story .head, .wedding-ceremony .head, .evening-get-together .head{
-	font-family: cursive;
-    font-size: 26px;
+	font-family: 'Snell Roundhand','Brush Script MT',cursive;
+    font-size: 40px;
     text-align: center;
 }
 
 .love-story .body{
 	padding: 10px;
-	font-family: monospace;
 }
 .wedding-ceremony .body, .evening-get-together .body{
 	padding: 10px;
@@ -149,18 +278,19 @@ body{
 }
 
 .love-story .body .left{
-	font-family: monospace;
 	text-align: left;
 	margin: 10px 0px;
 }
 .love-story .body .right{
-	font-family: monospace;
 	text-align: right;
 	margin: 10px 0px;
 }
 .love-story .body .sec .main{
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 400;
+}
+.love-story .body .sec .sub{
+	font-size: 15px;
 }
 .margin10{
 	margin: 15px 0px;
@@ -182,6 +312,7 @@ body{
 }
 .white{
 	color: white;
+	text-align: center;
 }
 
 .conclusion{
@@ -192,11 +323,12 @@ body{
 }
 .conclusion .head{
 	font-size: 32px;
-	font-family: cursive;
+	font-family: 'Snell Roundhand','Brush Script MT',cursive;
 }
 .conclusion img{
-	max-width: 75%;
-	margin-top: 20px;
+    max-width: 80%;
+    margin-top: 20px;
+    border-radius: 15px;
 }
 .gift-content{
 	font-style: italic;
@@ -219,4 +351,72 @@ body{
     color: white;
     font-size: 14px;
     font-style: italic;
+}
+
+
+
+
+
+
+main {
+  min-width: 300px;
+  max-width: 500px;
+  margin: auto;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.75em;
+  border-top: 3px solid;
+  -o-border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+     border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  padding: 15px;
+  counter-increment: section;
+  position: relative;
+  color: #34435E;
+}
+p:before {
+  content: counter(section);
+  position: absolute;
+  border-radius: 50%;
+  padding: 10px;
+  height: 1.25em;
+  width: 1.25em;
+  background-color: #34435E;
+  text-align: center;
+  line-height: 1.25em;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+p:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+}
+p:nth-child(odd):before {
+  left: 100%;
+  margin-left: -20px;
+}
+
+p:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+}
+p:nth-child(even):before {
+  right: 100%;
+  margin-right: -20px;
+}
+
+p:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+p:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }

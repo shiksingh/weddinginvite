@@ -3,18 +3,19 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <title>Shikha and Rohan</title>
   <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-<header class="header flex center">
+<header class="header flex center mobile-col">
 	<section class="flex-item flex p20 vcenter">
-		<div class="mlr3 f26">#ShiWedsRoh</div> 
+		<div class="mlr3 f26 cursive">#ShiWedsRoh</div> 
 		<div class="mlr3 f26">Invite</div>
 	</section>
-	<section class="flex-item flex even-spaced center">
+	<section class="flex-item flex even-spaced center mobile-hide">
 		<div class="italics">STORY</div>
 		<div class="italics">CELEBRATION</div>
 		<div class="italics">INVITE</div>
@@ -27,7 +28,8 @@
 </header>
 
 <section class="banner">
-	<img src="tempsnip.png">
+	<img src="tempsnip.png" class="mobile-hide">
+	<img src="Asset 3.png" style="width:100%" class="desktop-hide">
 </section>
 
 <section class="ganesha flex center">
@@ -35,7 +37,7 @@
 </section>
 
 <div class="frames">
-	<section class="left-frame">
+	<section class="left-frame mobile-hide">
 		<img src="Asset 11.png">
 		<img src="Asset 12.png">
 		<img src="Asset 13.png" style="position: relative;left:50px;">
@@ -49,31 +51,41 @@
 	</section>
 
 	<section class="frame-content">
-		<img src="Asset 3.png">
+		<img src="Asset 3.png" class="bobble-head">
 
-		<div class="love-story">
-			<div class="head">ShiRoh Love Story</div>
-			<div class="body">
-				<div class="sec right">
-					<div class="main">The Gulab Jamun</div>
-					<div class="sub">They first met at Paytm’s office when he joined. While having lunch together with the team, she stole his gulab jamun. Poor guy, didn’t even get a chance to protest.</div>
+		<div class="love-story" class="mobile-hide">
+			<div class="head" id="love-story-head">ShiRoh Love Story</div>
+			<div class="body overlay-wrapper mobile-hide" id="love-story-body">
+				<div class="overlay desktop-hide">
+					<div class="cross desktop-hide">x</div>
+					<div class="sec right">
+						<div class="main">The Gulab Jamun</div>
+						<div class="sub">They first met at Paytm’s office when he joined. While having lunch together with the team, she stole his gulab jamun. Poor guy, didn’t even get a chance to protest.</div>
+					</div>
+					<div class="sec left">
+						<div class="main">Shikha or Neha?</div>
+						<div class="sub">There were at least a couple of times he called her ‘Neha’. It took a while to convince her that her face naturally fit the name ‘Neha’ and it wasn’t someone else who looked familiar.</div>
+					</div>
+					<div class="sec right">
+						<div class="main">Kapoor’s Cafe</div>
+						<div class="sub">They went for their first date on to Kapoor’s Cafe in HSR, Bengaluru and had a sumptuous punjabi dinner.</div>
+					</div>
+					<div class="sec left">
+						<div class="main">iPhone tattoo</div>
+						<div class="sub">For testing some code on an iPhone device, she borrowed his brand new iPhone 8 and returned it with multiple cracks and broken glass. Luckily for her, he called it a real tattoo.</div>
+					</div>
+					<div class="sec right">
+						<div class="main">35</div>
+						<div class="sub">The first time she visited Mumbai, he took her in the 35-number BEST bus from the airport to his house. Uber is expensive in Mumbai, I guess.</div>	
+					</div>
 				</div>
-				<div class="sec left">
-					<div class="main">Shikha or Neha?</div>
-					<div class="sub">There were at least a couple of times he called her ‘Neha’. It took a while to convince her that her face naturally fit the name ‘Neha’ and it wasn’t someone else who looked familiar.</div>
-				</div>
-				<div class="sec right">
-					<div class="main">Kapoor’s Cafe</div>
-					<div class="sub">They went for their first date on to Kapoor’s Cafe in HSR, Bengaluru and had a sumptuous punjabi dinner.</div>
-				</div>
-				<div class="sec left">
-					<div class="main">iPhone tattoo</div>
-					<div class="sub">For testing some code on an iPhone device, she borrowed his brand new iPhone 8 and returned it with multiple cracks and broken glass. Luckily for her, he called it a real tattoo.</div>
-				</div>
-				<div class="sec right">
-					<div class="main">35</div>
-					<div class="sub">The first time she visited Mumbai, he took her in the 35-number BEST bus from the airport to his house. Uber is expensive in Mumbai, I guess.</div>	
-				</div>
+				<main class="mobile-hide">
+				  <p><b>The Gulab Jamun</b> - They first met at Paytm’s office when he joined. While having lunch together with the team, she stole his gulab jamun. Poor guy, didn’t even get a chance to protest.</p>
+				  <p><b>Shikha or Neha?</b> - There were at least a couple of times he called her ‘Neha’. It took a while to convince her that her face naturally fit the name ‘Neha’ and it wasn’t someone else who looked familiar.</p>
+				  <p><b>Kapoor’s Cafe</b> - They went for their first date on to Kapoor’s Cafe in HSR, Bengaluru and had a sumptuous punjabi dinner.</p>
+				  <p><b>iPhone tattoo</b> - For testing some code on an iPhone device, she borrowed his brand new iPhone 8 and returned it with multiple cracks and broken glass. Luckily for her, he called it a real tattoo.</p>
+				  <p><b>35</b> - The first time she visited Mumbai, he took her in the 35-number BEST bus from the airport to his house. Uber is expensive in Mumbai, I guess.</p>
+				</main>
 			</div>
 		</div>
 
@@ -88,7 +100,7 @@
 			<div class="head">Evening Get Together</div>
 			<div class="body">
 				<div>We invite you all to join us in our happiness and celebrations on the evening of 29th February</div>
-				<div class="margin10 flex">
+				<div class="margin10 flex center">
 					<div class="sub golden-right-border">
 						<div>7-8 <span>PM</span></div>
 						<div class="content">Meeting & greeting of family & friends</div>
@@ -103,14 +115,22 @@
 					</div>
 				</div>
 			</div>
-			<img src="invite.png" style="width: 100%;">
+			<img src="invite.png" style="width: 100%;" class="mobile-hide">
+			<div class="invite flex center desktop-hide">
+				<div class="main">Mrs. & Mr. Kumar and Mrs. & Mr. Rao request the honor of your presence at the marriage celebration of</div>
+				<img src="invite-mobile.png">
+				<div class="subMain">
+					<div class="width100">On Saturday February 29, 2019 7pm onwards</div>
+					<div class="width100">At Peninsula Grand The Finest - Banquet Hall Saki Naka Junction, Mumbai</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="white">We are so excited to celebrate with you!</div>
 		
 	</section>
 
-	<section class="right-frame">
+	<section class="right-frame mobile-hide">
 		<img src="Asset 11.png">
 		<img src="Asset 12.png">
 		<img src="Asset 13.png">
@@ -126,7 +146,8 @@
 
 <section class="conclusion">
 	<div class="head">A Lifetime of Togetherness</div>
-	<img src="footer.jpg">
+	<img src="footer.jpg" class="mobile-hide">
+	<img src="collage.jpg" class="desktop-hide">
 	<div class="gift-content">
 		<div class="see-you">See you soon!</div>
 		<div class="gifts">Gifts as blessings only.</div>
@@ -136,6 +157,8 @@
 <section class="footer">
 	<div class="text">This e-invite is our way of saving paper.</div>
 </section>
+
+<script type="text/javascript" src="index.js"></script>
 
 </body>
 </html>
